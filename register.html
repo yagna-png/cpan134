@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <main>
+        <section id="register">
+            <h2 style="color: blue;">Register for the Event</h2>
+            <form action="/submit-registration" method="POST">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+<br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+<br>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+<br>
+                <div>
+                    <label for="ticket">Ticket Type:</label>
+                    <select id="ticket" name="ticket">
+                        <option value="general">General Admission</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                </div>
+<br>
+                <div>
+                    <label for="comments">Any Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+<br>
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+        <footer id="contact">
+            <h3 style="color:green ;">Contact Us</h3>
+            <p>Email: info@musicfestival2024.com</p>
+            <p>Phone: +123-456-7890</p>
+        </footer>
+    </main>
